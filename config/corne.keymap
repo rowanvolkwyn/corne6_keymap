@@ -27,10 +27,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F     &kp P  &kp B        &kp J    &kp L  &kp U      &kp Y    &kp SEMICOLON  &kp BSPC
-&kp LCTRL  &kp A  &kp R  &kp S     &kp T  &kp G        &kp M    &kp N  &kp E      &kp I    &kp O          &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp D  &kp V        &kp K    &kp H  &kp COMMA  &kp DOT  &kp FSLH       &kp ESC
-                         &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
+&kp TAB    &kp Q  &kp W  &kp F     &kp P  &kp B        &kp J      &kp L  &kp U      &kp Y    &kp SEMICOLON  &kp BSPC
+&kp LCTRL  &kp A  &kp R  &kp S     &kp T  &kp G        &kp M      &kp N  &kp E      &kp I    &kp O          &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp D  &kp V        &kp K      &kp H  &kp COMMA  &kp DOT  &kp FSLH       &kp ESC
+                         &kp LGUI  &mo 1  &kp ENTER    &kp SPACE  &mo 2  &kp RALT
             >;
         };
 
@@ -46,7 +46,7 @@
 &kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp MINUS  &kp N7        &kp N8        &kp N9        &kp KP_DIVIDE    &kp BSPC
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MULTIPLY  &kp ENTER
 &kp LSHFT   &trans        &trans        &trans        &trans        &trans          &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RET          &kp ENTER
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET    &trans        &kp N0
+                                        &kp LGUI      &trans        &kp ENTER       &kp SPACE  &trans        &kp N0
             >;
         };
 
@@ -59,10 +59,10 @@
 
             display-name = "Raise";
             bindings = <
-&kp EXCL   &kp AT_SIGN  &kp HASH  &kp UP_ARROW    &kp DLLR   &kp PRCNT         &kp CARET  &kp AMPS        &kp LBKT              &kp RBKT               &kp RPAR  &kp BSPC
-&kp LCTRL  &trans       &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans            &kp MINUS  &kp BACKSPACE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSLH  &kp GRAVE
-&kp LSHFT  &kp Z        &kp X     &kp C           &trans     &kp V             &none      &kp UNDERSCORE  &kp LBRC              &kp RBRC               &kp PIPE  &kp TILDE
-                                  &kp LGUI        &trans     &kp UNDERSCORE    &kp RET    &trans          &kp RALT
+&kp EXCL   &kp AT_SIGN  &kp HASH  &kp UP_ARROW    &kp DLLR   &kp PRCNT    &kp CARET       &kp AMPS        &kp LBKT              &kp RBKT               &kp RPAR  &kp BSPC
+&kp LCTRL  &trans       &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans       &kp MINUS       &kp BACKSPACE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSLH  &kp GRAVE
+&kp LSHFT  &kp Z        &kp X     &kp C           &trans     &kp V        &none           &kp UNDERSCORE  &kp LBRC              &kp RBRC               &kp PIPE  &kp TILDE
+                                  &kp LGUI        &trans     &kp SEMI     &kp UNDERSCORE  &trans          &kp RALT
             >;
         };
 
