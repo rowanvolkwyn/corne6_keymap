@@ -27,10 +27,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F     &kp P  &kp B        &kp J      &kp L  &kp U      &kp Y    &kp SEMICOLON  &kp BSPC
-&kp LCTRL  &kp A  &kp R  &kp S     &kp T  &kp G        &kp M      &kp N  &kp E      &kp I    &kp O          &kp ENTER
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp D  &kp V        &kp K      &kp H  &kp COMMA  &kp DOT  &kp FSLH       &kp APOS
-                         &kp LGUI  &mo 1  &kp SPACE    &kp SPACE  &mo 2  &kp RALT
+&kp TAB    &kp Q  &kp W  &kp F     &kp P  &kp B        &kp J      &kp L          &kp U      &kp Y    &kp SEMICOLON  &kp ESCAPE
+&kp LCTRL  &kp A  &kp R  &kp S     &kp T  &kp G        &kp M      &kp N          &kp E      &kp I    &kp O          &kp RET
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp D  &kp V        &kp K      &kp H          &kp COMMA  &kp DOT  &kp FSLH       &kp ESC
+                         &kp LGUI  &mo 1  &kp SPACE    &kp SPACE  &kp BACKSPACE  &mo 2
             >;
         };
 
@@ -59,10 +59,10 @@
 
             display-name = "Raise";
             bindings = <
-&kp EXCL   &kp AT_SIGN  &kp HASH  &kp UP_ARROW    &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS        &kp LBKT              &kp RBKT               &kp RPAR  &kp BSPC
-&kp LCTRL  &trans       &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans       &kp MINUS  &kp BACKSPACE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSLH  &kp GRAVE
-&kp LSHFT  &kp Z        &kp X     &kp C           &trans     &kp V        &none      &kp UNDERSCORE  &kp LBRC              &kp RBRC               &kp PIPE  &kp TILDE
-                                  &kp LGUI        &trans     &kp SEMI     &kp SPACE  &trans          &kp RALT
+&kp EXCL    &kp AT_SIGN   &kp HASH      &kp UP_ARROW     &kp DLLR           &kp PRCNT           &kp CARET       &kp AMPS        &kp LBKT              &kp RBKT               &kp RPAR  &kp BSPC
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3       &bt BT_SEL 4        &kp MINUS       &kp BACKSPACE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSLH  &kp GRAVE
+&none       &kp K_PREV    &kp C_NEXT    &kp C_VOLUME_UP  &kp K_VOLUME_DOWN  &kp C_PLAY_PAUSE    &none           &kp UNDERSCORE  &kp LBRC              &kp RBRC               &kp PIPE  &kp TILDE
+                                        &kp LGUI         &trans             &kp SEMI            &kp UNDERSCORE  &trans          &kp RALT
             >;
         };
 
@@ -71,5 +71,15 @@
         extra_2 { status = "reserved"; };
 
         extra_3 { status = "reserved"; };
+
+        layer_6 {
+            display-name = "Raise";
+            bindings = <
+&kp EXCL    &kp AT_SIGN   &kp HASH      &kp UP_ARROW     &kp DLLR           &kp PRCNT           &none           &none   &none     &kp UP_ARROW  &none      &kp BSPC
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3       &bt BT_SEL 4        &none           &none   &kp LEFT  &kp DOWN      &kp RIGHT  &none
+&none       &kp K_PREV    &kp C_NEXT    &kp C_VOLUME_UP  &kp K_VOLUME_DOWN  &kp C_PLAY_PAUSE    &none           &none   &none     &none         &none      &none
+                                        &kp LGUI         &trans             &kp SEMI            &kp UNDERSCORE  &trans  &kp RALT
+            >;
+        };
     };
 };
