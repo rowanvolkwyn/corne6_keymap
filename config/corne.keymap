@@ -15,6 +15,30 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        rp {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <19 31>;
+        };
+
+        lp {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <16 28>;
+        };
+
+        lb {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <17 29>;
+        };
+
+        rb {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <18 30>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
