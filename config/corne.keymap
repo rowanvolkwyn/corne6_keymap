@@ -30,7 +30,7 @@
 &kp TAB    &kp Q  &kp W  &kp F     &kp P  &kp B        &kp J      &kp L          &kp U      &kp Y    &kp SEMICOLON  &kp ESCAPE
 &kp LCTRL  &kp A  &kp R  &kp S     &kp T  &kp G        &kp M      &kp N          &kp E      &kp I    &kp O          &kp RET
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp D  &kp V        &kp K      &kp H          &kp COMMA  &kp DOT  &kp FSLH       &kp ESC
-                         &kp LGUI  &mo 1  &kp SPACE    &kp SPACE  &kp BACKSPACE  &mo 2
+                         &kp LGUI  &mo 1  &kp SPACE    &kp SPACE  &kp BACKSPACE  &mo 6
             >;
         };
 
@@ -43,10 +43,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp ESCAPE  &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp MINUS      &kp N7        &kp N8        &kp N9        &kp KP_DIVIDE    &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp BACKSPACE  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MULTIPLY  &kp ENTER
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &kp PLUS       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RET          &kp ENTER
-                                        &kp LGUI      &trans        &kp SPACE       &kp UNDER      &trans        &kp N0
+&kp ESCAPE  &kp N1  &kp N2  &kp N3    &kp N4  &kp N5       &kp MINUS      &kp N7        &kp N8        &kp N9        &kp KP_DIVIDE    &kp BSPC
+&bt BT_CLR  &kp N1  &kp N2  &kp N3    &kp N4  &kp N5       &kp BACKSPACE  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MULTIPLY  &kp ENTER
+&kp LSHFT   &kp N6  &kp N7  &kp N8    &kp N9  &kp N0       &kp PLUS       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RET          &kp ENTER
+                            &kp LGUI  &trans  &kp SPACE    &kp UNDER      &trans        &kp N0
             >;
         };
 
