@@ -33,6 +33,36 @@
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <18 30>;
         };
+
+        undo {
+            bindings = <&kp LC(Z)>;
+            key-positions = <25 26>;
+        };
+
+        cut {
+            bindings = <&kp LC(X)>;
+            key-positions = <25 27>;
+        };
+
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <25 28>;
+        };
+
+        paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <25 29>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <19 20 21>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <13 14>;
+        };
     };
 
     keymap {
