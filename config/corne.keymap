@@ -63,6 +63,26 @@
             bindings = <&kp TAB>;
             key-positions = <13 14>;
         };
+
+        left_reset {
+            bindings = <&sys_reset>;
+            key-positions = <0 1 36>;
+        };
+
+        right_reset {
+            bindings = <&sys_reset>;
+            key-positions = <11 10 41>;
+        };
+
+        left_curly_brace {
+            bindings = <&kp LBRC>;
+            key-positions = <15 27>;
+        };
+
+        right_curly_brace {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <20 32>;
+        };
     };
 
     keymap {
@@ -80,7 +100,7 @@
 &kp TAB    &kp Q  &kp W  &kp F     &kp P  &kp B        &kp J                  &kp L          &kp U      &kp Y    &kp SEMICOLON  &kp ESCAPE
 &kp LCTRL  &kp A  &kp R  &kp S     &kp T  &kp G        &kp M                  &kp N          &kp E      &kp I    &kp O          &kp RET
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp D  &kp V        &kp K                  &kp H          &kp COMMA  &kp DOT  &kp FSLH       &kp ESC
-                         &kp LGUI  &mo 1  &kp SPACE    &mt RIGHT_SHIFT SPACE  &kp BACKSPACE  &mo 3
+                         &kp LGUI  &mo 1  &kp SPACE    &mt RIGHT_SHIFT SPACE  &kp BACKSPACE  &mo 2
             >;
         };
 
@@ -93,26 +113,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp TAB           &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPS      &kp STAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
-&kp LEFT_CONTROL  &kp N1    &kp N2  &kp N3    &kp N4      &kp N5         &kp MINUS  &kp KP_EQUAL  &kp APOS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
-&sys_reset        &kp N6    &kp N7  &kp N8    &kp N9      &kp N0         &kp UNDER  &kp PLUS      &kp TILDE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp RIGHT_ALT
-                                    &kp LGUI  &trans      &kp SPACE      &kp UNDER  &trans        &kp N0
-            >;
-        };
-
-        raise_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            display-name = "Raise";
-            bindings = <
-&kp EXCL    &kp AT_SIGN   &kp HASH      &kp UP_ARROW     &kp DLLR           &kp PRCNT           &kp CARET       &kp AMPS        &kp LBKT              &kp RBKT               &kp RPAR  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3       &bt BT_SEL 4        &kp MINUS       &kp BACKSPACE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSLH  &kp GRAVE
-&none       &kp K_PREV    &kp C_NEXT    &kp C_VOLUME_UP  &kp K_VOLUME_DOWN  &kp C_PLAY_PAUSE    &none           &kp UNDERSCORE  &kp LBRC              &kp RBRC               &kp PIPE  &kp TILDE
-                                        &kp LGUI         &trans             &kp SEMI            &kp UNDERSCORE  &trans          &kp RALT
+&kp TAB           &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR         &kp PERCENT    &kp ASTERISK           &kp N7           &kp N8        &kp N9        &kp RIGHT_PARENTHESIS  &kp BACKSLASH
+&kp LEFT_CONTROL  &kp N1    &kp N2  &kp APOS  &kp DOUBLE_QUOTES  &kp CARET      &kp EQUAL              &kp NUMBER_4     &kp N5        &kp NUMBER_6  &kp RIGHT_BRACKET      &kp PIPE
+&kp LEFT_SHIFT    &kp N6    &kp LT  &kp N8    &kp COLON          &kp AMPS       &kp MINUS              &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp RIGHT_BRACE        &kp RIGHT_ALT
+                                    &kp LGUI  &trans             &kp SPACE      &mt UNDER RIGHT_SHIFT  &lt 3 BACKSPACE  &kp N0
             >;
         };
 
@@ -121,8 +125,17 @@
             bindings = <
 &kp TAB     &kp F1        &kp F2        &kp F3           &kp F4             &kp F5              &kp F6          &kp F7    &kp F8    &kp F9        &kp F10    &kp BSPC
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3       &bt BT_SEL 4        &none           &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &none
-&none       &kp K_PREV    &kp C_NEXT    &kp C_VOLUME_UP  &kp K_VOLUME_DOWN  &kp C_PLAY_PAUSE    &none           &none     &none     &none         &none      &sys_reset
+&none       &kp K_PREV    &kp C_NEXT    &kp C_VOLUME_UP  &kp K_VOLUME_DOWN  &kp C_PLAY_PAUSE    &none           &none     &none     &none         &none      &none
                                         &kp LGUI         &trans             &kp SEMI            &kp UNDERSCORE  &trans    &kp RALT
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &kp UP_ARROW    &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans          &trans     &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans    &trans
             >;
         };
     };
