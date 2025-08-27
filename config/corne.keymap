@@ -114,9 +114,9 @@
             display-name = "Lower";
             bindings = <
 &kp TAB           &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR         &kp PERCENT    &kp ASTERISK           &kp N7           &kp N8        &kp N9        &kp RIGHT_PARENTHESIS  &kp BACKSLASH
-&kp LEFT_CONTROL  &kp N1    &kp N2  &kp APOS  &kp DOUBLE_QUOTES  &kp CARET      &kp EQUAL              &kp NUMBER_4     &kp N5        &kp NUMBER_6  &kp RIGHT_BRACKET      &kp PIPE
-&kp LEFT_SHIFT    &kp N6    &kp LT  &kp N8    &kp COLON          &kp AMPS       &kp MINUS              &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp RIGHT_BRACE        &kp RIGHT_ALT
-                                    &kp LGUI  &trans             &kp SPACE      &mt UNDER RIGHT_SHIFT  &lt 3 BACKSPACE  &kp N0
+&kp LEFT_CONTROL  &none     &none   &kp APOS  &kp DOUBLE_QUOTES  &kp CARET      &kp EQUAL              &kp NUMBER_4     &kp N5        &kp NUMBER_6  &kp RIGHT_BRACKET      &kp PIPE
+&kp LEFT_SHIFT    &none     &none   &none     &kp COLON          &kp AMPS       &kp MINUS              &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp RIGHT_BRACE        &kp RIGHT_ALT
+                                    &kp LGUI  &trans             &kp SPACE      &mt RIGHT_SHIFT UNDER  &lt 3 BACKSPACE  &kp N0
             >;
         };
 
