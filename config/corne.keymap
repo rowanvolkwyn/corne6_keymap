@@ -83,16 +83,6 @@
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <20 32>;
         };
-
-        GamingToggle {
-            bindings = <&tog 3>;
-            key-positions = <24 35>;
-        };
-
-        RegularToggle {
-            bindings = <&tog 0>;
-            key-positions = <11 23>;
-        };
     };
 
     keymap {
