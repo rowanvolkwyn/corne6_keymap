@@ -25,12 +25,12 @@
         };
 
         lb {
-            bindings = <&kp LEFT_BRACE>;
+            bindings = <&kp LEFT_BRACKET>;
             key-positions = <17 29>;
         };
 
         rb {
-            bindings = <&kp RIGHT_BRACE>;
+            bindings = <&kp RIGHT_BRACKET>;
             key-positions = <18 30>;
         };
 
@@ -45,23 +45,18 @@
         };
 
         copy {
-            bindings = <&kp LC(C)>;
+            bindings = <&kp K_COPY>;
             key-positions = <25 28>;
         };
 
         paste {
-            bindings = <&kp LC(V)>;
+            bindings = <&kp K_PASTE>;
             key-positions = <25 29>;
         };
 
         enter {
             bindings = <&kp ENTER>;
             key-positions = <19 20 21>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <13 14>;
         };
 
         left_reset {
@@ -97,10 +92,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F     &kp P  &kp B        &kp J                  &kp L          &kp U      &kp Y    &kp SEMICOLON  &kp ESCAPE
-&kp LCTRL  &kp A  &kp R  &kp S     &kp T  &kp G        &kp M                  &kp N          &kp E      &kp I    &kp O          &kp RET
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp D  &kp V        &kp K                  &kp H          &kp COMMA  &kp DOT  &kp FSLH       &none
-                         &kp LGUI  &mo 1  &kp SPACE    &mt RIGHT_SHIFT SPACE  &kp BACKSPACE  &mo 2
+&kp ESCAPE  &kp Q  &kp W  &kp F               &kp P             &kp B            &kp J                  &kp L              &kp U                &kp Y    &kp SEMICOLON  &kp ESCAPE
+&kp TAB     &kp A  &kp R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G            &kp M                  &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &kp I    &kp O          &kp RET
+&kp LSHFT   &kp Z  &kp X  &kp C               &kp D             &kp V            &kp K                  &kp H              &kp COMMA            &kp DOT  &kp FSLH       &none
+                          &kp LGUI            &mo 1             &kp BACKSPACE    &mt RIGHT_SHIFT SPACE  &kp BACKSPACE      &mo 2
             >;
         };
 
@@ -113,29 +108,29 @@
 
             display-name = "Lower";
             bindings = <
-&kp TAB           &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR         &kp PERCENT    &kp CARET     &kp AMPS         &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
-&kp LEFT_CONTROL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4       &kp N5         &kp NUMBER_6  &kp N7           &kp N8     &kp N9                &kp N0                 &kp PIPE
-&kp LEFT_SHIFT    &none         &none         &kp APOS      &kp DOUBLE_QUOTES  &none          &kp MINUS     &kp EQUAL        &kp COMMA  &kp PERIOD            &kp RIGHT_BRACE        &kp RIGHT_ALT
-                                              &kp LGUI      &trans             &kp SPACE      &kp UNDER     &lt 3 BACKSPACE  &kp N0
+&kp ESCAPE      &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR         &kp PERCENT      &kp CARET     &kp AMPS       &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
+&kp TAB         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4       &kp N5           &kp NUMBER_6  &kp N7         &kp N8     &kp N9                &kp N0                 &kp PIPE
+&kp LEFT_SHIFT  &none         &none         &kp APOS      &kp DOUBLE_QUOTES  &kp PLUS         &kp MINUS     &kp EQUAL      &kp COMMA  &kp PERIOD            &kp SLASH              &none
+                                            &kp LGUI      &trans             &kp BACKSPACE    &kp UNDER     &kp BACKSPACE  &none
             >;
         };
 
-        layer_6 {
+        upper_layer {
             display-name = "Raise";
             bindings = <
-&kp TAB     &kp EXCL      &kp AT        &kp POUND        &kp DOLLAR         &kp PERCENT         &kp CARET       &kp AMPS  &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &bt BT_SEL 3       &bt BT_SEL 4        &none           &kp LEFT  &kp DOWN   &kp UP_ARROW          &kp RIGHT              &none
-&none       &kp K_PREV    &kp C_NEXT    &kp C_VOLUME_UP  &kp K_VOLUME_DOWN  &kp C_PLAY_PAUSE    &none           &none     &none      &none                 &none                  &none
-                                        &kp LGUI         &trans             &kp SEMI            &kp UNDERSCORE  &trans    &kp RALT
+&kp ESCAPE  &kp EXCL      &kp AT        &kp POUND          &kp DOLLAR       &kp PERCENT         &kp CARET       &kp AMPS  &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSPC
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4        &none           &kp LEFT  &kp DOWN   &kp UP_ARROW          &kp RIGHT              &none
+&none       &kp K_PREV    &kp C_NEXT    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PLAY_PAUSE    &none           &none     &none      &none                 &none                  &none
+                                        &kp LGUI           &trans           &kp SEMI            &kp UNDERSCORE  &sl 3     &kp RALT
             >;
         };
 
-        layer_3 {
+        gaming_layer {
             bindings = <
 &kp ESC         &kp Q  &kp W  &kp E  &kp R  &kp T    &kp N7        &kp N8        &kp N9        &none           &none         &none
 &kp TAB         &kp A  &kp S  &kp D  &kp F  &kp G    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none           &kp UP_ARROW  &none
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C  &kp V  &kp B    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT
-                              &kp J  &kp K  &kp L    &none         &none         &none
+                              &kp J  &kp K  &kp L    &none         &sl 0         &none
             >;
         };
     };
