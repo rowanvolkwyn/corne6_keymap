@@ -92,10 +92,10 @@
 
             display-name = "Base";
             bindings = <
-&kp ESCAPE  &kp Q  &kp W  &kp F               &kp P             &kp B            &kp J                  &kp L              &kp U                &kp Y    &kp SEMICOLON  &kp ESCAPE
-&kp TAB     &kp A  &kp R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G            &kp M                  &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &kp I    &kp O          &kp RET
-&kp LSHFT   &kp Z  &kp X  &kp C               &kp D             &kp V            &kp K                  &kp H              &kp COMMA            &kp DOT  &kp FSLH       &none
-                          &kp LGUI            &mo 1             &kp BACKSPACE    &mt RIGHT_SHIFT SPACE  &kp BACKSPACE      &mo 2
+&kp ESCAPE  &kp Q  &kp W  &kp F               &kp P             &kp B                         &kp J                  &kp L              &kp U                &kp Y    &kp SEMICOLON  &kp ESCAPE
+&kp TAB     &kp A  &kp R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G                         &kp M                  &mt RIGHT_SHIFT N  &mt RIGHT_CONTROL E  &kp I    &kp O          &kp RET
+&kp LSHFT   &kp Z  &kp X  &kp C               &kp D             &kp V                         &kp K                  &kp H              &kp COMMA            &kp DOT  &kp FSLH       &none
+                          &kp LGUI            &mo 1             &mt LEFT_COMMAND BACKSPACE    &mt RIGHT_SHIFT SPACE  &kp BACKSPACE      &mo 2
             >;
         };
 
